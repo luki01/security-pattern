@@ -1,0 +1,118 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+% version 2.4 for LaTeX2e as of 16. April 2010 
+%
+\documentclass[12pt]{llncs} %%%%%%%%%%%%%%%%%%%%% Used for
+% drafting %%%%%%%%%%%%%%%%%%%%% 
+%\documentclass{llncs} 
+%
+
+\usepackage[colorlinks, linkcolor = black, citecolor = black, filecolor = black, urlcolor = blue]{hyperref} 
+
+% APA Cite Package and initialization
+%\RequirePackage{apacite}
+\usepackage[apaciteclassic]{apacite}
+\bibliographystyle{apacite}
+
+%
+\usepackage{makeidx}  % allows for indexgeneration
+%
+\usepackage{color}
+% 
+\setcounter{tocdepth}{2}
+% 
+% make a proper TOC despite llncs
+\makeatletter
+\renewcommand*\l@author[2]{}
+\renewcommand*\l@title[2]{}
+\makeatletter 
+
+\usepackage[UTF8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{comment}
+
+\usepackage{tabularx}
+
+
+
+%\linespread{1.6} %%%%%%%%%%%%%%%%%%%%% Used for drafting %%%%%%%%%%%%%%%%%%%%%
+%\usepackage[margin=2.5cm]{geometry} %%%%%%%%%%%%%%%%%%%%% Used for drafting
+% %%%%%%%%%%%%%%%%%%%%%
+
+%=====================================================================================
+
+\begin{document}
+%
+\frontmatter          % for the preliminaries 
+%
+\pagestyle{headings}  % switches on printing of running heads
+% \addtocmark{Hamiltonian Mechanics} % additional mark in the TOC
+%
+
+\author{The Author goes here!}
+\title{Security Patterns}
+\titlerunning{Security Patterns}  % abbreviated title (for running head)
+%                                     also used for the TOC unless
+%                                     \toctitle is used
+%\subtitle{Proposal}
+\institute{Institute?\\
+Department of ???\\
+Johannes Kepler University of Linz}
+\maketitle
+
+%\vspace{5cm} 
+\begin{flushright}\noindent
+What date is it?
+\end{flushright}
+\vspace{1cm}
+
+%\begin{tabular}{p{8cm}p{8cm}}
+%\begin{tabular}{>{\centering\arraybackslash}p{4cm}p{4cm}p{4cm}}
+\begin{tabular}{p{4cm}p{4cm}p{4cm}}
+Course Supervisor & & Course Supervisor \tabularnewline 
+??? & & ??? \tabularnewline 
+\end{tabular} 
+
+%=====================================================================================
+
+%\newpage
+
+\vspace{1cm}
+\begin{abstract}
+Here goes the abstract!\\
+\vspace{1cm}
+ 
+\textbf{Keywords: }
+\textit{Keyword1, keyword2, keyword3}
+\end{abstract}
+
+%=====================================================================================
+%
+\tableofcontents
+%
+\mainmatter              % start of the contributions
+%
+\title{Title?} 
+%
+%=====================================================================================
+
+\include{body}
+
+\clearpage
+
+
+
+
+\printindex
+
+\pagestyle{empty}
+\bibliography{bib/library}
+
+\clearpage
+
+%\include{biodata}
+
+\end{document}

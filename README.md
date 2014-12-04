@@ -1,4 +1,1 @@
-security-pattern
-================
-
-Termpaper for Software Engineering SE 2014
+# This is a template for LaTeX for term papers for the JKU
